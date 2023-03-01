@@ -236,7 +236,7 @@ img {
   text-align: center;
   margin: 0 auto;
   color: var(--title-color);
-  width: 320px;
+  max-width: 320px;
   margin-bottom: 72px;
 }
 
@@ -298,18 +298,12 @@ img {
 }
 
 .icon-bg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  margin-bottom: 8px;
-  width: 264px;
-  height: 112px;
-  background-color: var(--background-team-color);
+  display: none;
 }
 
 /* ---------- Service ------------ */
 .service {
+  display: none;
   padding-bottom: 120px;
 }
 
@@ -863,12 +857,6 @@ img {
   .container {
     max-width: 428px;
   }
-  .feature .icon-bg {
-    display: none;
-  }
-  .service {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -909,7 +897,7 @@ img {
 
   .hero-title {
     font-size: 56px;
-    width: 496px;
+    max-width: 496px;
     margin-bottom: 40px;
   }
 
@@ -1021,6 +1009,13 @@ img {
   }
   .feature .icon-bg {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    width: 264px;
+    height: 112px;
+    background-color: var(--background-team-color);
   }
 
   .feature-container .list {
