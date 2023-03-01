@@ -916,6 +916,9 @@ img {
   .feature .title {
     text-align: left;
   }
+  .feature-container {
+    display: flex;
+  }
 
   .feature-container .list {
     gap: 72px 24px;
@@ -1017,7 +1020,7 @@ img {
     padding-bottom: 120px;
   }
   .feature .icon-bg {
-    display: none;
+    display: flex;
   }
 
   .feature-container .list {
