@@ -673,7 +673,7 @@ img {
 .modal {
   position: absolute;
   top: 50%;
-  left: 33%;
+  left: 50%;
   width: 392px;
   min-height: 586px;
   background-color: var(--modal-windows);
@@ -970,8 +970,6 @@ img {
   }
   .modal {
     width: 408px;
-    top: 60%;
-    left: 50%;
   }
 }
 
@@ -1090,7 +1088,4 @@ img {
   }
   .modal {
     width: 408px;
-    top: 50%;
-    left: 50%;
-  }
 }
