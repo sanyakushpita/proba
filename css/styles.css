@@ -121,6 +121,11 @@ img {
   padding: 0px 15px;
   margin: 0px auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 428px;
+  }
+}
 
 /*---------- Header ----------*/
 .header {
