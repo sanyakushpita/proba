@@ -117,16 +117,16 @@ img {
 
 /*---------- Container ----------*/
 .container {
-  /* width: 100%; */
+  width: 100%;
   max-width: 1158px;
   padding: 0px 15px;
   margin: 0px auto;
 }
-/* @media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) {
   .container {
     max-width: 428px;
   }
-} */
+}
 
 /*---------- Header ----------*/
 .header {
