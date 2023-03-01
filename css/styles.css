@@ -132,6 +132,7 @@ img {
 .header-container {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .nav {
@@ -219,6 +220,16 @@ img {
   width: 100%;
   height: 100%;
   background: #ffffff;
+}
+
+.mob-menu-open {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 15px;
+}
+.icon-mobile {
+  stroke: #2e2f42;
 }
 .mob-close {
   width: 24px;
@@ -993,8 +1004,17 @@ img {
   .nav-logo {
     margin-right: 123px;
   }
+  .mob-menu-open {
+    display: none;
+  }
+  .site-nav {
+    display: flex;
+  }
   .site-nav .current::after {
-    top: 38px;
+    top: 34px;
+  }
+  .contacts .link {
+    display: flex;
   }
   .address .list {
     flex-direction: column;
