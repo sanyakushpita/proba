@@ -263,7 +263,7 @@ img {
   transition-timing-function: var(--anim-timing);
 }
 .mob-container {
-  padding: 24px 24px 40px 40px;
+  padding: 24px;
   max-width: 428px;
 }
 .mob-nav {
@@ -1013,7 +1013,7 @@ img {
 /* ---------- Tablet Media ---------- */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 738px;
+    max-width: 768px;
   }
   .header {
     padding-top: 24px;
