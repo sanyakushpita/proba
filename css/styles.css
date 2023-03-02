@@ -220,6 +220,7 @@ img {
   width: 100%;
   height: 100%;
   background: #ffffff;
+  z-index: 1;
 }
 
 .mob-menu-open {
@@ -361,6 +362,17 @@ img {
   margin-right: auto;
   padding-top: 112px;
   padding-bottom: 112px;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero_background_mobile_x2.jpg);
+  }
 }
 
 .hero-title {
@@ -617,6 +629,7 @@ img {
 .portfolio-container .project-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 48px;
 }
 
@@ -986,13 +999,13 @@ img {
 .form-btn:hover {
   background-color: var(--active-color);
 }
-
+/* ---------- Mobile Media ---------- */
 @media screen and (min-width: 480px) {
   .container {
     max-width: 428px;
   }
 }
-
+/* ---------- Tablet Media ---------- */
 @media screen and (min-width: 768px) {
   .container {
     max-width: 738px;
@@ -1013,6 +1026,7 @@ img {
   .site-nav .current::after {
     top: 34px;
   }
+
   .contacts .link {
     display: flex;
   }
@@ -1033,9 +1047,18 @@ img {
       url(../images/hero_background_tablet.jpg);
     max-width: 768px;
     max-height: 436px;
-  }
-  .hero {
     padding-bottom: 108px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero_background_tablet_x2.jpg);
+    }
   }
 
   .hero-title {
@@ -1046,6 +1069,9 @@ img {
 
   .feature .title {
     text-align: left;
+  }
+  .feature .text {
+    width: 356px;
   }
   .feature-container {
     display: flex;
@@ -1082,6 +1108,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 72px 24px;
+    justify-content: normal;
   }
   .project-list .item {
     flex-basis: calc((100% - 24px) / 2);
@@ -1109,7 +1136,7 @@ img {
     width: 264px;
   }
 }
-
+/* ---------- Desktop ----------- */
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1158px;
@@ -1141,6 +1168,17 @@ img {
     max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero_background_x2.jpg);
+    }
   }
   .hero-title {
     margin-bottom: 48px;
@@ -1176,6 +1214,7 @@ img {
   .feature .text {
     font-weight: 400;
     font-size: 16px;
+    width: 264px;
   }
 
   .service {
